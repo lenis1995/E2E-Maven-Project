@@ -15,9 +15,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.*;
+
 
 public class SetupConfiguration {
 
@@ -34,9 +33,10 @@ public class SetupConfiguration {
 	}
 
 	public WebDriver initializeDriver() throws Exception {
-		String browserName = System.getProperty("browser"); // TO MAVEN PARAMETER EXECUTION
-		String headlessMode = System.getProperty("headless");
-//		String browserName = prop.getProperty("browser");   // TO PROPERTIES FILE
+		//String browserName = System.getProperty("browser"); // TO MAVEN PARAMETER EXECUTION
+		//String headlessMode = System.getProperty("headless");
+		String browserName = prop.getProperty("browser");   // TO PROPERTIES FILE
+		String headlessMode = prop.getProperty("headless");
 		driver = null;
 
 		if (browserName.equals("chrome")) {
@@ -83,14 +83,14 @@ public class SetupConfiguration {
 		Object[][] data = new Object[2][3];
 
 		// Row 0
-		data[0][0] = "Juan Jose";
-		data[0][1] = "tussiRagnark@gmail.com";
-		data[0][2] = "Tussi123";
+		data[0][0] = "Juan Jose Arboleda";
+		data[0][1] = "tussiRagnar01@gmail.com";
+		data[0][2] = "Tussi456";
 
 		// Row 1
-		data[1][0] = "Sebas Carta";
-		data[1][1] = "zackDBal@gmail.com";
-		data[1][2] = "ZackD123";
+		data[1][0] = "Sebas Cartagena";
+		data[1][1] = "zackDBal14@gmail.com";
+		data[1][2] = "ZackD678";
 
 		return data;
 	}

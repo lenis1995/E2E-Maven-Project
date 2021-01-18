@@ -48,7 +48,7 @@ public class UserLogin extends SetupConfiguration {
 		log.info("Login Link Clicked");
 		// Check Login Page title
 		actualResult = driver.getTitle();
-		expectedResult = "Rahul Shetty Academy";
+		expectedResult = "WebServices Testing using SoapUI";
 		Assert.assertEquals(actualResult, expectedResult);
 		log.info("Login page title comparison done");
 		// Login Data
@@ -71,7 +71,7 @@ public class UserLogin extends SetupConfiguration {
 		log.info("Login Link Clicked");
 		// Check Login Page title
 		actualResult = driver.getTitle();
-		expectedResult = "Rahul Shetty Academy";
+		expectedResult = "WebServices Testing using SoapUI";
 		Assert.assertEquals(actualResult, expectedResult);
 		log.info("Login page title comparison done");
 		//Login Data

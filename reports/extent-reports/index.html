@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">jun 3, 2020 07:55:23 PM</span>
+                    <span class="badge badge-primary">Jan 18, 2021 12:12:23 PM</span>
                 </a>
             </li>
         </ul>
@@ -72,15 +72,7 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -108,8 +100,8 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
 						
-						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -122,28 +114,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="fail" test-id="1"
+				<li class="test-item"  status="pass" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">registerUser</p>
-							<p class="duration text-sm">0h 0m 40s+688ms</p>
-							<span class="datetime">19:55:43 PM</span>
+							<p class="duration text-sm">0h 0m 7s+520ms</p>
+							<span class="datetime">12:12:35 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">registerUser</h5>
-									<span class='badge badge-success'>06.03.2020 19:55:43</span>
-									<span class='badge badge-danger'>06.03.2020 19:56:24</span>
-									<span class='badge badge-default'>0h 0m 40s+688ms</span>
+									<h5 class="test-status text-pass">registerUser</h5>
+									<span class='badge badge-success'>01.18.2021 12:12:35</span>
+									<span class='badge badge-danger'>01.18.2021 12:12:43</span>
+									<span class='badge badge-default'>0h 0m 7s+520ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -159,117 +151,87 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:56:24 PM</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:12:43 PM</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user_name"}
-  (Session info: headless chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-NFM24RP9', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\lenix\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aa1bb5dc200e452026b3800ee36073fd
-*** Element info: {Using=id, value=user_name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
-	at pageObjects.RegisterPage.setUsername(RegisterPage.java:40)
-	at FullProject.RegisterAnUser.registerUser(RegisterAnUser.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:56:24 PM</td>
-				<td>
-						no such element: Unable to locate element: {"method":"css selector","selector":"#user_name"}
-  (Session info: headless chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-NFM24RP9', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\lenix\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aa1bb5dc200e452026b3800ee36073fd
-*** Element info: {Using=id, value=user_name}
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-exclamation text-error"></i></td>
-				<td>07:56:24 PM</td>
-				<td>
-						FullProject.RegisterAnUser
+						Test Successfully Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\registerUser 1.png' src='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\registerUser 1.png'>
-	</ul>
-</div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="2"
+				<li class="test-item"  status="pass" test-id="2"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">registerUser</p>
+							<p class="duration text-sm">0h 0m 7s+219ms</p>
+							<span class="datetime">12:12:55 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">registerUser</h5>
+									<span class='badge badge-success'>01.18.2021 12:12:55</span>
+									<span class='badge badge-danger'>01.18.2021 12:13:02</span>
+									<span class='badge badge-default'>0h 0m 7s+219ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:13:02 PM</td>
+				<td>
+						Test Successfully Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">forgotPassword</p>
-							<p class="duration text-sm">0h 0m 3s+294ms</p>
-							<span class="datetime">19:55:43 PM</span>
+							<p class="duration text-sm">0h 0m 2s+923ms</p>
+							<span class="datetime">12:13:14 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">forgotPassword</h5>
-									<span class='badge badge-success'>06.03.2020 19:55:43</span>
-									<span class='badge badge-danger'>06.03.2020 19:55:47</span>
-									<span class='badge badge-default'>0h 0m 3s+294ms</span>
+									<h5 class="test-status text-pass">forgotPassword</h5>
+									<span class='badge badge-success'>01.18.2021 12:13:14</span>
+									<span class='badge badge-danger'>01.18.2021 12:13:17</span>
+									<span class='badge badge-default'>0h 0m 2s+923ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -285,88 +247,39 @@ Session ID: aa1bb5dc200e452026b3800ee36073fd
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:55:47 PM</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:13:17 PM</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [Rahul Shetty Academy] but found [Attention Required! | Cloudflare]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at FullProject.UserLogin.forgotPassword(UserLogin.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:55:47 PM</td>
-				<td>
-						expected [Rahul Shetty Academy] but found [Attention Required! | Cloudflare]
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-exclamation text-error"></i></td>
-				<td>07:55:47 PM</td>
-				<td>
-						FullProject.UserLogin
+						Test Successfully Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\forgotPassword 1.png' src='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\forgotPassword 1.png'>
-	</ul>
-</div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="3"
+				<li class="test-item"  status="pass" test-id="4"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">loginUser</p>
-							<p class="duration text-sm">0h 0m 2s+428ms</p>
-							<span class="datetime">19:55:59 PM</span>
+							<p class="duration text-sm">0h 0m 2s+468ms</p>
+							<span class="datetime">12:13:29 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">loginUser</h5>
-									<span class='badge badge-success'>06.03.2020 19:55:59</span>
-									<span class='badge badge-danger'>06.03.2020 19:56:02</span>
-									<span class='badge badge-default'>0h 0m 2s+428ms</span>
+									<h5 class="test-status text-pass">loginUser</h5>
+									<span class='badge badge-success'>01.18.2021 12:13:29</span>
+									<span class='badge badge-danger'>01.18.2021 12:13:32</span>
+									<span class='badge badge-default'>0h 0m 2s+468ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -382,88 +295,39 @@ Session ID: aa1bb5dc200e452026b3800ee36073fd
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:56:02 PM</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:13:32 PM</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [Rahul Shetty Academy] but found [Attention Required! | Cloudflare]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at FullProject.UserLogin.loginUser(UserLogin.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:56:02 PM</td>
-				<td>
-						expected [Rahul Shetty Academy] but found [Attention Required! | Cloudflare]
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-exclamation text-error"></i></td>
-				<td>07:56:02 PM</td>
-				<td>
-						FullProject.UserLogin
+						Test Successfully Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\loginUser 1.png' src='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\loginUser 1.png'>
-	</ul>
-</div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="4"
+				<li class="test-item"  status="pass" test-id="5"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">loginUser</p>
-							<p class="duration text-sm">0h 0m 2s+984ms</p>
-							<span class="datetime">19:56:14 PM</span>
+							<p class="duration text-sm">0h 0m 2s+511ms</p>
+							<span class="datetime">12:13:43 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">loginUser</h5>
-									<span class='badge badge-success'>06.03.2020 19:56:14</span>
-									<span class='badge badge-danger'>06.03.2020 19:56:17</span>
-									<span class='badge badge-default'>0h 0m 2s+984ms</span>
+									<h5 class="test-status text-pass">loginUser</h5>
+									<span class='badge badge-success'>01.18.2021 12:13:43</span>
+									<span class='badge badge-danger'>01.18.2021 12:13:45</span>
+									<span class='badge badge-default'>0h 0m 2s+511ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -479,330 +343,15 @@ Session ID: aa1bb5dc200e452026b3800ee36073fd
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:56:17 PM</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:13:45 PM</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [Rahul Shetty Academy] but found [Attention Required! | Cloudflare]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at FullProject.UserLogin.loginUser(UserLogin.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:56:17 PM</td>
-				<td>
-						expected [Rahul Shetty Academy] but found [Attention Required! | Cloudflare]
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-exclamation text-error"></i></td>
-				<td>07:56:17 PM</td>
-				<td>
-						FullProject.UserLogin
+						Test Successfully Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\loginUser 1.png' src='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\loginUser 1.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="fail" test-id="5"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">registerUser</p>
-							<p class="duration text-sm">0h 0m 31s+982ms</p>
-							<span class="datetime">19:56:41 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-fail">registerUser</h5>
-									<span class='badge badge-success'>06.03.2020 19:56:41</span>
-									<span class='badge badge-danger'>06.03.2020 19:57:13</span>
-									<span class='badge badge-default'>0h 0m 31s+982ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:57:13 PM</td>
-				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user_name"}
-  (Session info: headless chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-NFM24RP9', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\lenix\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62061}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e99aa2e4e283b14a6d92b124ce7091c3
-*** Element info: {Using=id, value=user_name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
-	at pageObjects.RegisterPage.setUsername(RegisterPage.java:40)
-	at FullProject.RegisterAnUser.registerUser(RegisterAnUser.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>07:57:13 PM</td>
-				<td>
-						no such element: Unable to locate element: {"method":"css selector","selector":"#user_name"}
-  (Session info: headless chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-NFM24RP9', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\lenix\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62061}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e99aa2e4e283b14a6d92b124ce7091c3
-*** Element info: {Using=id, value=user_name}
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-exclamation text-error"></i></td>
-				<td>07:57:13 PM</td>
-				<td>
-						FullProject.RegisterAnUser
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\registerUser 1.png' src='C:\Users\lenix\eclipse-workspace\FullProject\reports\screenshots\registerUser 1.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="test-content scrollable">
-		<div class="test-content-tools">
-			<ul>
-				<li>
-					<a class="back-to-test" href="javascript:void(0)">
-					<i class="fa fa-arrow-left"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-content-detail">
-			<div class="detail-body"></div>
-		</div>
-	</div>
-</div><div class="test-wrapper row exception-view attributes-view">
-	<div class="test-list">
-		<div class="test-list-tools">
-			<ul class="tools pull-left">
-				<li>
-					<a href="">
-					<span class="font-size-14">Exception</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="tools text-right">
-				<li>
-					<a href="#">
-					<span class="badge badge-primary">2</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-list-wrapper scrollable">
-			<ul class="test-list-item">
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">java.lang.AssertionError</p>
-							<p class="duration text-sm">3 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>java.lang.AssertionError</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>19:55:43 PM</td>
-									<td class='linked' test-id='2'>
-										forgotPassword
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>19:55:59 PM</td>
-									<td class='linked' test-id='3'>
-										loginUser
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>19:56:14 PM</td>
-									<td class='linked' test-id='4'>
-										loginUser
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">org.openqa.selenium.NoSuchElementException</p>
-							<p class="duration text-sm">2 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.NoSuchElementException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>19:55:43 PM</td>
-									<td class='linked' test-id='1'>
-										registerUser
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>19:56:41 PM</td>
-									<td class='linked' test-id='5'>
-										registerUser
-									</td>
-								</tr>
-							</tbody>
-						</table>
 					</div>
 				</li>
 			</ul>
@@ -836,12 +385,12 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'>
-						<b>0</b> tests passed
+					<div><small data-tooltip='100%'>
+						<b>5</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='100%'><b>5</b> tests failed, 
+						<small data-tooltip='0%'><b>0</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -859,10 +408,10 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+					<div><small data-tooltip='100%'><b>5</b> events passed</small></div>
 					<div>
-						<small data-tooltip='66,667%'><b>10</b> events failed, 
-						<b data-tooltip='33,333%'>5</b> others
+						<small data-tooltip='0%'><b>0</b> events failed, 
+						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -879,7 +428,7 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 							<h2 class="font-size-28 font-weight-light mt-3">5</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>,00%</span>
+							<span>100.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -895,7 +444,7 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">jun 3, 2020 07:55:23 PM</h4>
+							<h4 class="font-weight-light mt-4">Jan 18, 2021 12:12:23 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -911,7 +460,7 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 50s+788ms</h4>
+							<h4 class="font-weight-light mt-4">0h 1m 22s+972ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -965,13 +514,13 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 <script>
 	var statusGroup = {
 	    parentCount: 5,
-		passParent: 0,
-		failParent: 5,
+		passParent: 5,
+		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 5,
+		exceptionsParent: 0,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -992,11 +541,11 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 15,
-		passEvents: 0,
-		failEvents: 10,
+		eventsCount: 5,
+		passEvents: 5,
+		failEvents: 0,
 		fatalEvents: 0,
-		errorEvents: 5,
+		errorEvents: 0,
 		warningEvents: 0,
 		skipEvents: 0,
 		infoEvents: 0,
@@ -1006,7 +555,7 @@ Session ID: e99aa2e4e283b14a6d92b124ce7091c3
 </script>
 <script>
 	var timeline = {
-	        "registerUser":40.688,"forgotPassword":3.294,"loginUser":2.428,"loginUser":2.984,"registerUser":31.982
+	        "registerUser":7.52,"registerUser":7.219,"forgotPassword":2.923,"loginUser":2.468,"loginUser":2.511
 	};
 </script>
                 </div>

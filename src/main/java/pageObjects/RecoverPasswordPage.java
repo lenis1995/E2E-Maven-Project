@@ -15,16 +15,16 @@ public class RecoverPasswordPage {
 	// -----------------------------------------------------------------------------------
 	// Objects Statement
 
-	@FindBy(css = "div.content-box>h1")
+	@FindBy(css = ".main-hero>h1")
 	private WebElement resetTitle;
 
 	@FindBy(id = "user_email")
 	private WebElement email;
 
-	@FindBy(css = "input[class='btn btn-primary btn-md']")
+	@FindBy(css = "[type='submit']")
 	private WebElement sendInstructions;
 
-	@FindBy(css = "div.header-upper")
+	@FindBy(css = "header>div")
 	public static WebElement mainBar;
 
 	// -----------------------------------------------------------------------------------
